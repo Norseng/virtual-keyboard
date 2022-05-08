@@ -149,7 +149,7 @@ class Keys {
                     } else if(currentCode === 'CapsLock') {
                         e.preventDefault();
                         elem.click();
-                    } else if(currentCode === 'ShiftLeft') {
+                    } else if(currentCode === 'ShiftLeft' || currentCode === 'ShiftRight') {
                         e.preventDefault();
                         elem.classList.add('active');
                         this.keyShiftLogic('uppercase')
@@ -170,7 +170,7 @@ class Keys {
                 if (currentCode === currentId && currentId !== 'CapsLock') {
                     elem.classList.remove('active')                    
                 }
-                if(currentCode === 'ShiftLeft') {
+                if(currentCode === 'ShiftLeft' || currentCode === 'ShiftRight') {
                     this.keyShiftLogic('lowercase')
                 }
             })
