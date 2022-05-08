@@ -16,9 +16,6 @@ heading.textContent = 'Virtual Keyboard';
 container.className = 'container';
 textarea.className = 'textarea';
 keyboardWrapper.className = 'keyboard';
-
-
-
 key.className = 'key';
 
 textarea.placeholder = 'Enter text...';
