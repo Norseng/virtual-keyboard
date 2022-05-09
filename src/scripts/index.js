@@ -121,9 +121,9 @@ class Keys {
         this.keyboardClick();
         this.keyShiftHandler('ShiftLeft');
         this.keyShiftHandler('ShiftRight');
-        this.switchLangVirtual();
-        this.switchLang('ControlLeft', 'AltLeft')
-        this.switchLang('AltLeft', 'ControlLeft')
+        this.switchLang();
+        this.switchLangVirtual('ControlLeft', 'AltLeft')
+        this.switchLangVirtual('AltLeft', 'ControlLeft')
     }
     keyboardClick() {
         document.addEventListener('keydown', (e) => {
@@ -204,7 +204,7 @@ class Keys {
             }
         })
     }
-    switchLangVirtual() {
+    switchLang() {
         let controlLeft = document.querySelector('[data-id="ControlLeft"]');
         let altLeft = document.querySelector('[data-id="AltLeft"]');
         document.addEventListener('keydown', () => {
@@ -213,7 +213,7 @@ class Keys {
             }
         })
     }
-    switchLang(firstKey, lastKey) {
+    switchLangVirtual(firstKey, lastKey) {
         firstKey = document.querySelector(`[data-id="${firstKey}"]`);
         lastKey = document.querySelector(`[data-id="${lastKey}"]`);
         firstKey.addEventListener('mousedown', () => {
