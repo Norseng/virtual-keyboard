@@ -20,7 +20,7 @@ key.className = 'key';
 
 textarea.placeholder = 'Enter text...';
 desc.textContent = 'OS Windows';
-desc2.textContent = 'Switch language: Shift (Left) + Alt (Left)';
+desc2.textContent = 'Switch language: Ctrl (Left) + Alt (Left)';
 
 document.body.append(container);
 container.append(heading);
@@ -116,11 +116,14 @@ class Keys {
                     })
                 }
             })
-            keyboardWrapper.appendChild(key);
+            this.wrapper.appendChild(key);
         }
         this.keyboardClick();
-        this.keyShiftHandler();
-        this.switchLang()
+        this.keyShiftHandler('ShiftLeft');
+        this.keyShiftHandler('ShiftRight');
+        this.switchLangVirtual();
+        this.switchLang('ControlLeft', 'AltLeft')
+        this.switchLang('AltLeft', 'ControlLeft')
     }
     keyboardClick() {
         document.addEventListener('keydown', (e) => {
@@ -176,8 +179,8 @@ class Keys {
             })
         })
     }
-    keyShiftHandler() {
-        let keyShift = document.querySelector('[data-id="ShiftLeft"]');
+    keyShiftHandler(shiftName) {
+        let keyShift = document.querySelector(`[data-id="${shiftName}"]`);
         keyShift.addEventListener('mousedown', () => {
             this.keyShiftLogic('uppercase')
             keyShift.classList.add('active');
@@ -201,12 +204,27 @@ class Keys {
             }
         })
     }
-    switchLang() {
+    switchLangVirtual() {
         let controlLeft = document.querySelector('[data-id="ControlLeft"]');
         let altLeft = document.querySelector('[data-id="AltLeft"]');
         document.addEventListener('keydown', () => {
             if(controlLeft.classList.contains('active') && altLeft.classList.contains('active')) {
                 this.localStorageLang();
+            }
+        })
+    }
+    switchLang(firstKey, lastKey) {
+        firstKey = document.querySelector(`[data-id="${firstKey}"]`);
+        lastKey = document.querySelector(`[data-id="${lastKey}"]`);
+        firstKey.addEventListener('mousedown', () => {
+            firstKey.classList.add('active');
+        })
+        document.addEventListener('mouseup', (e) => {
+            if(e.target === lastKey && firstKey.classList.contains('active')) {
+                firstKey.classList.remove('active');
+                this.localStorageLang();
+            } else {
+                firstKey.classList.remove('active');
             }
         })
     }
