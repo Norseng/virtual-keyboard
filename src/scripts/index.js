@@ -166,9 +166,15 @@ class Keys {
                     elem.classList.remove('active')                    
                 }
                 if(currentCode === 'ShiftLeft' || currentCode === 'ShiftRight') {
-                    this.capsShiftLogic('lowercase', 'uppercase')
+                    let capsLock = document.querySelector('[data-id="CapsLock"]')
+                    if(capsLock.classList.contains('active')) {
+                        this.keyShiftLogic('capsLowercase')
+                    } else {
+                        this.keyShiftLogic('lowercase')
+                    }
                 }
             })
+            
         })
     }
     capsShiftLogic(downStatus, upStatus) {
