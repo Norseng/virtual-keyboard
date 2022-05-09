@@ -11,6 +11,7 @@ const key = document.createElement('div');
 const desc = document.createElement('p');
 const desc1 = document.createElement('span');
 const desc2 = document.createElement('span');
+const re = /[A-zА-яЁё]/;
 
 heading.textContent = 'Virtual Keyboard';
 container.className = 'container';
@@ -99,21 +100,13 @@ class Keys {
                         this.caretMove(0, 1)
                     }
                 } else if(keyId === 'CapsLock') {
-                    e.target.classList.toggle('active');
-                    let keysArr = [...e.target.parentElement.children];
-                    keysArr.forEach((e) => {
-                        let keySpan = e.children[0].innerText.length;
-                        if(keySpan === 1) {
-                            if(!e.classList.contains('uppercase')) {
-                                e.classList.add('uppercase');
-                                e.children[0].innerText = e.children[0].innerText.toUpperCase();
-                            } else {
-                                e.classList.remove('uppercase');
-                                e.children[0].innerText = e.children[0].innerText.toLowerCase();
-                            }
-                            
-                        }
-                    })
+                    if(!e.target.classList.contains('active')) {
+                        e.target.classList.add('active');
+                        this.keyShiftLogic('capsLowercase')
+                    } else {
+                        e.target.classList.remove('active');
+                        this.keyShiftLogic('capsUppercase')
+                    }
                 }
             })
             this.wrapper.appendChild(key);
@@ -155,7 +148,7 @@ class Keys {
                     } else if(currentCode === 'ShiftLeft' || currentCode === 'ShiftRight') {
                         e.preventDefault();
                         elem.classList.add('active');
-                        this.keyShiftLogic('uppercase')
+                        this.capsShiftLogic('uppercase', 'lowercase')
                     } else {
                         elem.classList.add('active')
                         textarea.focus();
@@ -167,27 +160,68 @@ class Keys {
             e.preventDefault()
             let currentCode = e.code
             let keys = document.querySelectorAll('[data-id]')
-            
             keys.forEach((elem) => {
                 let currentId = elem.getAttribute('data-id')
                 if (currentCode === currentId && currentId !== 'CapsLock') {
                     elem.classList.remove('active')                    
                 }
                 if(currentCode === 'ShiftLeft' || currentCode === 'ShiftRight') {
-                    this.keyShiftLogic('lowercase')
+                    this.capsShiftLogic('lowercase', 'uppercase')
                 }
             })
         })
     }
+    capsShiftLogic(downStatus, upStatus) {
+        let capsLock = document.querySelector('[data-id="CapsLock"]');
+        if(capsLock.classList.contains('active')) {
+            let keysArr = [...keyboardWrapper.children];
+            keysArr.forEach((elem) => {
+                let keyId = elem.getAttribute('data-id');
+                for(let i = 0; i<layouts.length;i++) {
+                    if(keyId === layouts[i].key) {
+                        if (!re.test(elem.children[0].innerText)) {
+                            elem.children[0].innerText = layouts[i][this.lang][downStatus];
+                        } else {
+                            elem.children[0].innerText = layouts[i][this.lang][upStatus];
+                        } 
+                    }
+                }
+            })
+        } else {
+            this.keyShiftLogic(downStatus) 
+        }
+    }
     keyShiftHandler(shiftName) {
         let keyShift = document.querySelector(`[data-id="${shiftName}"]`);
         keyShift.addEventListener('mousedown', () => {
-            this.keyShiftLogic('uppercase')
+            let capsLock = document.querySelector('[data-id="CapsLock"]')
+            if(capsLock.classList.contains('active')) {
+                let keysArr = [...keyboardWrapper.children];
+                keysArr.forEach((elem) => {
+                    let keyId = elem.getAttribute('data-id');
+                    for(let i = 0; i<layouts.length;i++) {
+                        if(keyId === layouts[i].key) {
+                            if (!re.test(elem.children[0].innerText)) {
+                                elem.children[0].innerText = layouts[i][this.lang].uppercase;
+                            } else {
+                                elem.children[0].innerText = layouts[i][this.lang].lowercase;
+                            } 
+                        }
+                    }
+                })
+            } else {
+               this.keyShiftLogic('uppercase') 
+            }
             keyShift.classList.add('active');
             document.addEventListener('mouseup', (e) => {
+                keyShift.classList.remove('active');
                 if(e.target === keyShift) {
-                    this.keyShiftLogic('lowercase')
-                    keyShift.classList.remove('active');
+                    if(capsLock.classList.contains('active')) {
+                        this.keyShiftLogic('capsLowercase')
+                    } else {
+                        this.keyShiftLogic('lowercase')
+                    }
+                    
                 }
             })
         });
@@ -225,6 +259,7 @@ class Keys {
                 this.localStorageLang();
             } else {
                 firstKey.classList.remove('active');
+                this.capsShiftLogic('lowercase', 'uppercase')
             }
         })
     }

@@ -4,10 +4,14 @@ const layouts = [
         ru: {
             lowercase: 'ё',
             uppercase: 'Ё',
+            capsLowercase: 'Ё',
+            capsUppercase: 'ё',
         },
         en: {
             lowercase: '`',
             uppercase: '~',
+            capsLowercase: '`',
+            capsUppercase: '`',
         },
     },
     {
@@ -15,10 +19,14 @@ const layouts = [
         ru: {
             lowercase: '1',
             uppercase: '!',
+            capsLowercase: '1',
+            capsUppercase: '1',
         },
         en: {
             lowercase: '1',
             uppercase: '!',
+            capsLowercase: '1',
+            capsUppercase: '1',
         },
     },
     {
@@ -26,10 +34,14 @@ const layouts = [
         ru: {
             lowercase: '2',
             uppercase: '"',
+            capsLowercase: '2',
+            capsUppercase: '2',
         },
         en: {
             lowercase: '2',
             uppercase: '@',
+            capsLowercase: '2',
+            capsUppercase: '2',
         },
     },
     {
@@ -37,10 +49,14 @@ const layouts = [
         ru: {
             lowercase: '3',
             uppercase: '№',
+            capsLowercase: '3',
+            capsUppercase: '3',
         },
         en: {
             lowercase: '3',
             uppercase: '#',
+            capsLowercase: '3',
+            capsUppercase: '3',
         },
     },
     {
@@ -48,10 +64,14 @@ const layouts = [
         ru: {
             lowercase: '4',
             uppercase: ';',
+            capsLowercase: '4',
+            capsUppercase: '4',
         },
         en: {
             lowercase: '4',
             uppercase: '$',
+            capsLowercase: '4',
+            capsUppercase: '4',
         },
     },
     {
@@ -59,10 +79,14 @@ const layouts = [
         ru: {
             lowercase: '5',
             uppercase: '%',
+            capsLowercase: '5',
+            capsUppercase: '5',
         },
         en: {
             lowercase: '5',
             uppercase: '%',
+            capsLowercase: '5',
+            capsUppercase: '5',
         },
     },
     {
@@ -70,10 +94,14 @@ const layouts = [
         ru: {
             lowercase: '6',
             uppercase: ':',
+            capsLowercase: '6',
+            capsUppercase: '6',
         },
         en: {
             lowercase: '6',
             uppercase: '^',
+            capsLowercase: '6',
+            capsUppercase: '6',
         },
     },
     {
@@ -81,10 +109,14 @@ const layouts = [
         ru: {
             lowercase: '7',
             uppercase: '?',
+            capsLowercase: '7',
+            capsUppercase: '7',
         },
         en: {
             lowercase: '7',
             uppercase: '&',
+            capsLowercase: '7',
+            capsUppercase: '7',
         },
     },
     {
@@ -92,10 +124,14 @@ const layouts = [
         ru: {
             lowercase: '8',
             uppercase: '*',
+            capsLowercase: '8',
+            capsUppercase: '8',
         },
         en: {
             lowercase: '8',
             uppercase: '*',
+            capsLowercase: '8',
+            capsUppercase: '8',
         },
     },
     {
@@ -103,10 +139,14 @@ const layouts = [
         ru: {
             lowercase: '9',
             uppercase: '(',
+            capsLowercase: '9',
+            capsUppercase: '9',
         },
         en: {
             lowercase: '9',
             uppercase: '(',
+            capsLowercase: '9',
+            capsUppercase: '9',
         },
     },
     {
@@ -114,10 +154,14 @@ const layouts = [
         ru: {
             lowercase: '0',
             uppercase: ')',
+            capsLowercase: '0',
+            capsUppercase: '0',
         },
         en: {
             lowercase: '0',
             uppercase: ')',
+            capsLowercase: '0',
+            capsUppercase: '0',
         },
     },
     {
@@ -125,10 +169,14 @@ const layouts = [
         ru: {
             lowercase: '-',
             uppercase: '_',
+            capsLowercase: '-',
+            capsUppercase: '-',
         },
         en: {
             lowercase: '-',
             uppercase: '_',
+            capsLowercase: '-',
+            capsUppercase: '-',
         },
     },
     {
@@ -136,10 +184,14 @@ const layouts = [
         ru: {
             lowercase: '=',
             uppercase: '+',
+            capsLowercase: '=',
+            capsUppercase: '=',
         },
         en: {
             lowercase: '=',
             uppercase: '+',
+            capsLowercase: '=',
+            capsUppercase: '=',
         },
     },
     {
@@ -147,10 +199,14 @@ const layouts = [
         ru: {
             lowercase: 'Backspace',
             uppercase: 'Backspace',
+            capsLowercase: 'Backspace',
+            capsUppercase: 'Backspace',
         },
         en: {
             lowercase: 'Backspace',
             uppercase: 'Backspace',
+            capsLowercase: 'Backspace',
+            capsUppercase: 'Backspace',
         },
     },
     {
@@ -158,10 +214,14 @@ const layouts = [
         ru: {
             lowercase: 'Tab',
             uppercase: 'Tab',
+            capsLowercase: 'Tab',
+            capsUppercase: 'Tab',
         },
         en: {
             lowercase: 'Tab',
             uppercase: 'Tab',
+            capsLowercase: 'Tab',
+            capsUppercase: 'Tab',
         },
     },
     {
@@ -169,10 +229,14 @@ const layouts = [
         ru: {
             lowercase: 'й',
             uppercase: 'Й',
+            capsLowercase: 'Й',
+            capsUppercase: 'й',
         },
         en: {
             lowercase: 'q',
             uppercase: 'Q',
+            capsLowercase: 'Q',
+            capsUppercase: 'q',
         },
     },
     {
@@ -180,10 +244,14 @@ const layouts = [
         ru: {
             lowercase: 'ц',
             uppercase: 'Ц',
+            capsLowercase: 'Ц',
+            capsUppercase: 'ц',
         },
         en: {
             lowercase: 'w',
             uppercase: 'W',
+            capsLowercase: 'W',
+            capsUppercase: 'w',
         },
     },
     {
@@ -191,10 +259,14 @@ const layouts = [
         ru: {
             lowercase: 'у',
             uppercase: 'У',
+            capsLowercase: 'У',
+            capsUppercase: 'у',
         },
         en: {
             lowercase: 'e',
             uppercase: 'E',
+            capsLowercase: 'E',
+            capsUppercase: 'e',
         },
     },
     {
@@ -202,10 +274,14 @@ const layouts = [
         ru: {
             lowercase: 'к',
             uppercase: 'К',
+            capsLowercase: 'К',
+            capsUppercase: 'к',
         },
         en: {
             lowercase: 'r',
             uppercase: 'R',
+            capsLowercase: 'R',
+            capsUppercase: 'r',
         },
     },
     {
@@ -213,10 +289,14 @@ const layouts = [
         ru: {
             lowercase: 'е',
             uppercase: 'Е',
+            capsLowercase: 'Е',
+            capsUppercase: 'е',
         },
         en: {
             lowercase: 't',
             uppercase: 'T',
+            capsLowercase: 'T',
+            capsUppercase: 't',
         },
     },
     {
@@ -224,10 +304,14 @@ const layouts = [
         ru: {
             lowercase: 'н',
             uppercase: 'Н',
+            capsLowercase: 'Н',
+            capsUppercase: 'н',
         },
         en: {
             lowercase: 'y',
             uppercase: 'Y',
+            capsLowercase: 'Y',
+            capsUppercase: 'y',
         },
     },
     {
@@ -235,10 +319,14 @@ const layouts = [
         ru: {
             lowercase: 'г',
             uppercase: 'Г',
+            capsLowercase: 'Г',
+            capsUppercase: 'г',
         },
         en: {
             lowercase: 'u',
             uppercase: 'U',
+            capsLowercase: 'U',
+            capsUppercase: 'u',
         },
     },
     {
@@ -246,10 +334,14 @@ const layouts = [
         ru: {
             lowercase: 'ш',
             uppercase: 'Ш',
+            capsLowercase: 'Ш',
+            capsUppercase: 'ш',
         },
         en: {
             lowercase: 'i',
             uppercase: 'I',
+            capsLowercase: 'I',
+            capsUppercase: 'i',
         },
     },
     {
@@ -257,10 +349,14 @@ const layouts = [
         ru: {
             lowercase: 'щ',
             uppercase: 'Щ',
+            capsLowercase: 'Щ',
+            capsUppercase: 'щ',
         },
         en: {
             lowercase: 'o',
             uppercase: 'O',
+            capsLowercase: 'O',
+            capsUppercase: 'o',
         },
     },
     {
@@ -268,10 +364,14 @@ const layouts = [
         ru: {
             lowercase: 'з',
             uppercase: 'З',
+            capsLowercase: 'З',
+            capsUppercase: 'з',
         },
         en: {
             lowercase: 'p',
             uppercase: 'P',
+            capsLowercase: 'P',
+            capsUppercase: 'p',
         },
     },
     {
@@ -279,10 +379,14 @@ const layouts = [
         ru: {
             lowercase: 'х',
             uppercase: 'Х',
+            capsLowercase: 'Х',
+            capsUppercase: 'х',
         },
         en: {
             lowercase: '[',
             uppercase: '{',
+            capsLowercase: '[',
+            capsUppercase: '[',
         },
     },
     {
@@ -290,10 +394,14 @@ const layouts = [
         ru: {
             lowercase: 'ъ',
             uppercase: 'Ъ',
+            capsLowercase: 'Ъ',
+            capsUppercase: 'ъ',
         },
         en: {
             lowercase: ']',
             uppercase: '}',
+            capsLowercase: ']',
+            capsUppercase: ']',
         },
     },
     {
@@ -301,10 +409,14 @@ const layouts = [
         ru: {
             lowercase: '\\',
             uppercase: '|',
+            capsLowercase: '\\',
+            capsUppercase: '\\',
         },
         en: {
             lowercase: '\\',
             uppercase: '|',
+            capsLowercase: '\\',
+            capsUppercase: '\\',
         },
     },
     {
@@ -312,10 +424,14 @@ const layouts = [
         ru: {
             lowercase: 'Del',
             uppercase: 'Del',
+            capsLowercase: 'Del',
+            capsUppercase: 'Del',
         },
         en: {
             lowercase: 'Del',
             uppercase: 'Del',
+            capsLowercase: 'Del',
+            capsUppercase: 'Del',
         },
     },
     {
@@ -323,10 +439,14 @@ const layouts = [
         ru: {
             lowercase: 'CapsLock',
             uppercase: 'CapsLock',
+            capsLowercase: 'CapsLock',
+            capsUppercase: 'CapsLock',
         },
         en: {
             lowercase: 'CapsLock',
             uppercase: 'CapsLock',
+            capsLowercase: 'CapsLock',
+            capsUppercase: 'CapsLock',
         },
     },
     {
@@ -334,10 +454,14 @@ const layouts = [
         ru: {
             lowercase: 'ф',
             uppercase: 'Ф',
+            capsLowercase: 'Ф',
+            capsUppercase: 'ф',
         },
         en: {
             lowercase: 'a',
             uppercase: 'A',
+            capsLowercase: 'A',
+            capsUppercase: 'a',
         },
     },
     {
@@ -345,10 +469,14 @@ const layouts = [
         ru: {
             lowercase: 'ы',
             uppercase: 'Ы',
+            capsLowercase: 'Ы',
+            capsUppercase: 'ы',
         },
         en: {
             lowercase: 's',
             uppercase: 'S',
+            capsLowercase: 'S',
+            capsUppercase: 's',
         },
     },
     {
@@ -356,10 +484,14 @@ const layouts = [
         ru: {
             lowercase: 'в',
             uppercase: 'В',
+            capsLowercase: 'В',
+            capsUppercase: 'в',
         },
         en: {
             lowercase: 'd',
             uppercase: 'D',
+            capsLowercase: 'D',
+            capsUppercase: 'd',
         },
     },
     {
@@ -367,10 +499,14 @@ const layouts = [
         ru: {
             lowercase: 'а',
             uppercase: 'А',
+            capsLowercase: 'А',
+            capsUppercase: 'а',
         },
         en: {
             lowercase: 'f',
             uppercase: 'F',
+            capsLowercase: 'F',
+            capsUppercase: 'f',
         },
     },
     {
@@ -378,10 +514,14 @@ const layouts = [
         ru: {
             lowercase: 'п',
             uppercase: 'П',
+            capsLowercase: 'П',
+            capsUppercase: 'п',
         },
         en: {
             lowercase: 'g',
             uppercase: 'G',
+            capsLowercase: 'G',
+            capsUppercase: 'g',
         },
     },
     {
@@ -389,10 +529,14 @@ const layouts = [
         ru: {
             lowercase: 'р',
             uppercase: 'Р',
+            capsLowercase: 'Р',
+            capsUppercase: 'р',
         },
         en: {
             lowercase: 'h',
             uppercase: 'H',
+            capsLowercase: 'H',
+            capsUppercase: 'h',
         },
     },
     {
@@ -400,10 +544,14 @@ const layouts = [
         ru: {
             lowercase: 'о',
             uppercase: 'О',
+            capsLowercase: 'О',
+            capsUppercase: 'о',
         },
         en: {
             lowercase: 'j',
             uppercase: 'J',
+            capsLowercase: 'J',
+            capsUppercase: 'j',
         },
     },
     {
@@ -411,10 +559,14 @@ const layouts = [
         ru: {
             lowercase: 'л',
             uppercase: 'Л',
+            capsLowercase: 'Л',
+            capsUppercase: 'л',
         },
         en: {
             lowercase: 'k',
             uppercase: 'K',
+            capsLowercase: 'K',
+            capsUppercase: 'k',
         },
     },
     {
@@ -422,10 +574,14 @@ const layouts = [
         ru: {
             lowercase: 'д',
             uppercase: 'Д',
+            capsLowercase: 'Д',
+            capsUppercase: 'д',
         },
         en: {
             lowercase: 'l',
             uppercase: 'L',
+            capsLowercase: 'L',
+            capsUppercase: 'l',
         },
     },
     {
@@ -433,10 +589,14 @@ const layouts = [
         ru: {
             lowercase: 'ж',
             uppercase: 'Ж',
+            capsLowercase: 'Ж',
+            capsUppercase: 'ж',
         },
         en: {
             lowercase: ';',
             uppercase: ':',
+            capsLowercase: ';',
+            capsUppercase: ';',
         },
     },
     {
@@ -444,10 +604,14 @@ const layouts = [
         ru: {
             lowercase: 'э',
             uppercase: 'Э',
+            capsLowercase: 'Э',
+            capsUppercase: 'э',
         },
         en: {
             lowercase: "'",
             uppercase: '"',
+            capsLowercase: "'",
+            capsUppercase: "'",
         },
     },
     {
@@ -455,10 +619,14 @@ const layouts = [
         ru: {
             lowercase: 'Enter',
             uppercase: 'Enter',
+            capsLowercase: 'Enter',
+            capsUppercase: 'Enter',
         },
         en: {
             lowercase: 'Enter',
             uppercase: 'Enter',
+            capsLowercase: 'Enter',
+            capsUppercase: 'Enter',
         },
     },
 
@@ -467,10 +635,14 @@ const layouts = [
         ru: {
             lowercase: 'Shift',
             uppercase: 'Shift',
+            capsLowercase: 'Shift',
+            capsUppercase: 'Shift',
         },
         en: {
             lowercase: 'Shift',
             uppercase: 'Shift',
+            capsLowercase: 'Shift',
+            capsUppercase: 'Shift',
         },
     },
     {
@@ -478,10 +650,14 @@ const layouts = [
         ru: {
             lowercase: 'я',
             uppercase: 'Я',
+            capsLowercase: 'Я',
+            capsUppercase: 'я',
         },
         en: {
             lowercase: 'z',
             uppercase: 'Z',
+            capsLowercase: 'Z',
+            capsUppercase: 'z',
         },
     },
     {
@@ -489,10 +665,14 @@ const layouts = [
         ru: {
             lowercase: 'ч',
             uppercase: 'Ч',
+            capsLowercase: 'Ч',
+            capsUppercase: 'ч',
         },
         en: {
             lowercase: 'x',
             uppercase: 'X',
+            capsLowercase: 'X',
+            capsUppercase: 'x',
         },
     },
     {
@@ -500,10 +680,14 @@ const layouts = [
         ru: {
             lowercase: 'с',
             uppercase: 'С',
+            capsLowercase: 'С',
+            capsUppercase: 'с',
         },
         en: {
             lowercase: 'c',
             uppercase: 'C',
+            capsLowercase: 'C',
+            capsUppercase: 'c',
         },
     },
     {
@@ -511,10 +695,14 @@ const layouts = [
         ru: {
             lowercase: 'м',
             uppercase: 'М',
+            capsLowercase: 'М',
+            capsUppercase: 'м',
         },
         en: {
             lowercase: 'v',
             uppercase: 'V',
+            capsLowercase: 'V',
+            capsUppercase: 'v',
         },
     },
     {
@@ -522,10 +710,14 @@ const layouts = [
         ru: {
             lowercase: 'и',
             uppercase: 'И',
+            capsLowercase: 'И',
+            capsUppercase: 'и',
         },
         en: {
             lowercase: 'b',
             uppercase: 'B',
+            capsLowercase: 'B',
+            capsUppercase: 'b',
         },
     },
     {
@@ -533,10 +725,14 @@ const layouts = [
         ru: {
             lowercase: 'т',
             uppercase: 'Т',
+            capsLowercase: 'Т',
+            capsUppercase: 'т',
         },
         en: {
             lowercase: 'n',
             uppercase: 'N',
+            capsLowercase: 'N',
+            capsUppercase: 'n',
         },
     },
     {
@@ -544,10 +740,14 @@ const layouts = [
         ru: {
             lowercase: 'ь',
             uppercase: 'Ь',
+            capsLowercase: 'Ь',
+            capsUppercase: 'ь',
         },
         en: {
             lowercase: 'm',
             uppercase: 'M',
+            capsLowercase: 'M',
+            capsUppercase: 'm',
         },
     },
     {
@@ -555,10 +755,14 @@ const layouts = [
         ru: {
             lowercase: 'б',
             uppercase: 'Б',
+            capsLowercase: 'Б',
+            capsUppercase: 'б',
         },
         en: {
             lowercase: ',',
             uppercase: '<',
+            capsLowercase: ',',
+            capsUppercase: ',',
         },
     },
     {
@@ -566,10 +770,14 @@ const layouts = [
         ru: {
             lowercase: 'ю',
             uppercase: 'Ю',
+            capsLowercase: 'Ю',
+            capsUppercase: 'ю',
         },
         en: {
             lowercase: '.',
             uppercase: '>',
+            capsLowercase: '.',
+            capsUppercase: '.',
         },
     },
     {
@@ -577,10 +785,14 @@ const layouts = [
         ru: {
             lowercase: '.',
             uppercase: ',',
+            capsLowercase: '.',
+            capsUppercase: '.',
         },
         en: {
             lowercase: '/',
             uppercase: '?',
+            capsLowercase: '/',
+            capsUppercase: '/',
         },
     },
     {
@@ -588,10 +800,14 @@ const layouts = [
         ru: {
             lowercase: '↑',
             uppercase: '↑',
+            capsLowercase: '↑',
+            capsUppercase: '↑',
         },
         en: {
-            lowercase: `↑`,
+            lowercase: '↑',
             uppercase: '↑',
+            capsLowercase: '↑',
+            capsUppercase: '↑',
         },
     },
     {
@@ -599,10 +815,14 @@ const layouts = [
         ru: {
             lowercase: 'Shift',
             uppercase: 'Shift',
+            capsLowercase: 'Shift',
+            capsUppercase: 'Shift',
         },
         en: {
             lowercase: 'Shift',
             uppercase: 'Shift',
+            capsLowercase: 'Shift',
+            capsUppercase: 'Shift',
         },
     },
     {
@@ -610,10 +830,14 @@ const layouts = [
         ru: {
             lowercase: 'Ctrl',
             uppercase: 'Ctrl',
+            capsLowercase: 'Ctrl',
+            capsUppercase: 'Ctrl',
         },
         en: {
             lowercase: 'Ctrl',
             uppercase: 'Ctrl',
+            capsLowercase: 'Ctrl',
+            capsUppercase: 'Ctrl',
         },
     },
     {
@@ -621,10 +845,14 @@ const layouts = [
         ru: {
             lowercase: 'Win',
             uppercase: 'Win',
+            capsLowercase: 'Win',
+            capsUppercase: 'Win',
         },
         en: {
             lowercase: 'Win',
             uppercase: 'Win',
+            capsLowercase: 'Win',
+            capsUppercase: 'Win',
         },
     },
     {
@@ -632,10 +860,14 @@ const layouts = [
         ru: {
             lowercase: 'Alt',
             uppercase: 'Alt',
+            capsLowercase: 'Alt',
+            capsUppercase: 'Alt',
         },
         en: {
             lowercase: 'Alt',
             uppercase: 'Alt',
+            capsLowercase: 'Alt',
+            capsUppercase: 'Alt',
         },
     },
     {
@@ -643,10 +875,14 @@ const layouts = [
         ru: {
             lowercase: 'Space',
             uppercase: 'Space',
+            capsLowercase: 'Space',
+            capsUppercase: 'Space',
         },
         en: {
             lowercase: 'Space',
             uppercase: 'Space',
+            capsLowercase: 'Space',
+            capsUppercase: 'Space',
         },
     },
     {
@@ -654,10 +890,14 @@ const layouts = [
         ru: {
             lowercase: 'Alt',
             uppercase: 'Alt',
+            capsLowercase: 'Alt',
+            capsUppercase: 'Alt',
         },
         en: {
             lowercase: 'Alt',
             uppercase: 'Alt',
+            capsLowercase: 'Alt',
+            capsUppercase: 'Alt',
         },
     },
     {
@@ -665,10 +905,14 @@ const layouts = [
         ru: {
             uppercase: '←',
             lowercase: '←',
+            capsLowercase: '←',
+            capsUppercase: '←',
         },
         en: {
             lowercase: '←',
             uppercase: '←',
+            capsLowercase: '←',
+            capsUppercase: '←',
         },
     },
     {
@@ -676,10 +920,14 @@ const layouts = [
         ru: {
             lowercase: '↓',
             uppercase: '↓',
+            capsLowercase: '↓',
+            capsUppercase: '↓',
         },
         en: {
             lowercase: '↓',
             uppercase: '↓',
+            capsLowercase: '↓',
+            capsUppercase: '↓',
         },
     },
     {
@@ -687,10 +935,14 @@ const layouts = [
         ru: {
             lowercase: '→',
             uppercase: '→',
+            capsLowercase: '→',
+            capsUppercase: '→',
         },
         en: {
             lowercase: '→',
             uppercase: '→',
+            capsLowercase: '→',
+            capsUppercase: '→',
         },
     },
     {
@@ -698,10 +950,14 @@ const layouts = [
         ru: {
             lowercase: 'Ctrl',
             uppercase: 'Ctrl',
+            capsLowercase: 'Ctrl',
+            capsUppercase: 'Ctrl',
         },
         en: {
             lowercase: 'Ctrl',
             uppercase: 'Ctrl',
+            capsLowercase: 'Ctrl',
+            capsUppercase: 'Ctrl',
         },
     },
 ]
