@@ -227,7 +227,6 @@ class Keys {
                     } else {
                         this.keyShiftLogic('lowercase')
                     }
-                    
                 }
             })
         });
@@ -263,9 +262,6 @@ class Keys {
             if(e.target === lastKey && firstKey.classList.contains('active')) {
                 firstKey.classList.remove('active');
                 this.localStorageLang();
-            } else {
-                firstKey.classList.remove('active');
-                this.capsShiftLogic('lowercase', 'uppercase')
             }
         })
     }
